@@ -1,0 +1,13 @@
+c:\users\егор\documents\visual studio 2012\Projects\Диплом1\Диплом1\bin\Debug\Диплом1.exe.config
+c:\users\егор\documents\visual studio 2012\Projects\Диплом1\Диплом1\bin\Debug\Диплом1.exe
+c:\users\егор\documents\visual studio 2012\Projects\Диплом1\Диплом1\bin\Debug\Диплом1.pdb
+c:\users\егор\documents\visual studio 2012\Projects\Диплом1\Диплом1\obj\Debug\Диплом1.csprojResolveAssemblyReference.cache
+c:\users\егор\documents\visual studio 2012\Projects\Диплом1\Диплом1\obj\Debug\Диплом1.Properties.Resources.resources
+c:\users\егор\documents\visual studio 2012\Projects\Диплом1\Диплом1\obj\Debug\Диплом1.csproj.GenerateResource.Cache
+c:\users\егор\documents\visual studio 2012\Projects\Диплом1\Диплом1\obj\Debug\Диплом1.exe
+c:\users\егор\documents\visual studio 2012\Projects\Диплом1\Диплом1\obj\Debug\Диплом1.pdb
+C:\Users\Егор\Documents\Visual Studio 2012\Projects\Диплом1\Диплом1\obj\Debug\Диплом1.Form2.resources
+C:\Users\Егор\documents\visual studio 2012\Projects\Диплом1\Диплом1\obj\Debug\Диплом1.Form1.resources
+C:\Users\Егор\documents\visual studio 2012\Projects\Диплом1\Диплом1\obj\Debug\Диплом1.Form4.resources
+C:\Users\Егор\documents\visual studio 2012\Projects\Диплом1\Диплом1\obj\Debug\Диплом1.Form5.resources
+C:\Users\Егор\documents\visual studio 2012\Projects\Диплом1\Диплом1\obj\Debug\Диплом1.Form3.resources
