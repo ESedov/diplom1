@@ -76,7 +76,7 @@ namespace Диплом1
        {
            get;
            set;
-       }
+       } 
        public static string TB4
        {
            get;

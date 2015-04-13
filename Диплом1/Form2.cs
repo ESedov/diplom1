@@ -12,6 +12,7 @@ namespace Диплом1
 {
     public partial class Form2 : Form
     {
+        public string TB3;
         public Form2()
         {
             InitializeComponent();
@@ -109,7 +110,7 @@ namespace Диплом1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text != "" && textBox2.Text != "" && textBox3.Text != "" && textBox4.Text != "" && textBox5.Text != "" && textBox6.Text != "")
+           if (textBox1.Text != "" && textBox2.Text != "" && textBox3.Text != "" && textBox4.Text != "" && textBox5.Text != "" && textBox6.Text != "")
             {
                 this.Hide();
                 Form3 thirdForm = new Form3();
@@ -118,7 +119,7 @@ namespace Диплом1
             }
             else
             {
-                MessageBox.Show("LOH");
+                MessageBox.Show("Вы ввели не все данные");
             }
         }
 

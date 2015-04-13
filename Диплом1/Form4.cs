@@ -63,8 +63,12 @@ namespace Диплом1
         {
             if (Data.kolvo_TB2 != Peremen.F2_TB2)
             {
-                this.Close();
+                this.Hide();
                 Data.combocheck = -1;
+            }
+            else
+            {
+                this.Close();
             }
         }
     }

@@ -11,3 +11,4 @@ C:\Users\Егор\documents\visual studio 2012\Projects\Диплом1\Дипло
 C:\Users\Егор\documents\visual studio 2012\Projects\Диплом1\Диплом1\obj\Debug\Диплом1.Form4.resources
 C:\Users\Егор\documents\visual studio 2012\Projects\Диплом1\Диплом1\obj\Debug\Диплом1.Form5.resources
 C:\Users\Егор\documents\visual studio 2012\Projects\Диплом1\Диплом1\obj\Debug\Диплом1.Form3.resources
+C:\Users\Егор\documents\visual studio 2012\Projects\Диплом1\Диплом1\obj\Debug\Диплом1.Form6.resources

@@ -100,7 +100,7 @@
             this.comboBox1.Location = new System.Drawing.Point(66, 302);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(270, 28);
+            this.comboBox1.Size = new System.Drawing.Size(566, 28);
             this.comboBox1.TabIndex = 6;
             this.comboBox1.Text = "Тип ветви";
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
