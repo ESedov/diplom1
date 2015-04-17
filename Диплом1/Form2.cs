@@ -111,7 +111,13 @@ namespace Диплом1
         private void button1_Click(object sender, EventArgs e)
         {
            if (textBox1.Text != "" && textBox2.Text != "" && textBox3.Text != "" && textBox4.Text != "" && textBox5.Text != "" && textBox6.Text != "")
-            {
+           {
+                Peremen.F2_TB1 = int.Parse(Peremen.TB1);
+                Peremen.F2_TB2 = int.Parse(Peremen.TB2);
+                Peremen.F2_TB3 = int.Parse(Peremen.TB3);
+                Peremen.F2_TB4 = int.Parse(Peremen.TB4);
+                Peremen.F2_TB5 = int.Parse(Peremen.TB5);
+                Peremen.F2_TB6 = int.Parse(Peremen.TB6);
                 this.Hide();
                 Form3 thirdForm = new Form3();
                 thirdForm.ShowDialog();

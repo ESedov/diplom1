@@ -129,7 +129,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.Location = new System.Drawing.Point(764, 249);
+            this.button1.Location = new System.Drawing.Point(764, 250);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(117, 49);
             this.button1.TabIndex = 11;
@@ -148,6 +148,7 @@
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "Отсутствие смазки в месте контакта";
             this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
             // radioButton2
             // 
@@ -160,6 +161,7 @@
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "Наличие смазки в месте контакта";
             this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
             // 
             // Form4
             // 

@@ -12,6 +12,7 @@ namespace Диплом1
 {
     public partial class Form5 : Form
     {
+        private double RB;
         public Form5()
         {
             InitializeComponent();
@@ -43,6 +44,9 @@ namespace Диплом1
                         textBox5.Hide();
                         textBox6.Hide();
                         label8.Hide();
+                        radioButton1.Hide();
+                        radioButton2.Hide();
+                        radioButton3.Hide();
                         break;
                     }
                 case 2:
@@ -135,16 +139,111 @@ namespace Диплом1
         {
             if (Data.kolvo_TB3 <= Peremen.F2_TB3)
             {
-                this.Hide();
+                switch (Data.combocheck)
+                {
+                    case 0:
+                        {
+                            Data.RN[Data.i1, 0] = double.Parse(textBox1.Text);
+                            Data.RN[Data.i1, 1] = double.Parse(textBox2.Text);
+                            Data.RN[Data.i1, 2] = 0;
+
+                            Data.RKN[Data.i1, 0] = RB;
+                            Data.RKN[Data.i1, 1] = 0;
+                            Data.RKN[Data.i1, 2] = 0;
+                            break;
+                        }
+                    case 1:
+                        {
+                            Data.RN[Data.i1, 0] = double.Parse(textBox1.Text);
+                            Data.RN[Data.i1, 1] = double.Parse(textBox2.Text);
+                            Data.RN[Data.i1, 2] = 0;
+
+                            Data.RKN[Data.i1, 0] = double.Parse(textBox3.Text);
+                            Data.RKN[Data.i1, 1] = double.Parse(textBox4.Text);
+                            Data.RKN[Data.i1, 2] = 0;
+                            break;
+                        }
+                    case 2:
+                        {
+                            Data.RN[Data.i1, 0] = double.Parse(textBox1.Text);
+                            Data.RN[Data.i1, 1] = double.Parse(textBox2.Text);
+                            Data.RN[Data.i1, 2] = 0;
+
+                            Data.RKN[Data.i1, 0] = double.Parse(textBox3.Text);
+                            Data.RKN[Data.i1, 1] = double.Parse(textBox4.Text);
+                            Data.RKN[Data.i1, 2] = 0;
+                            break;
+                        }
+                    case 3:
+                        {
+                            Data.RN[Data.i1, 0] = double.Parse(textBox1.Text);
+                            Data.RN[Data.i1, 1] = double.Parse(textBox2.Text);
+                            Data.RN[Data.i1, 2] = 0;
+
+                            Data.RKN[Data.i1, 0] = double.Parse(textBox3.Text);
+                            Data.RKN[Data.i1, 1] = 0;
+                            Data.RKN[Data.i1, 2] = 0;
+                            break;
+                        }
+                    case 4:
+                        {
+                            Data.RN[Data.i1, 0] = double.Parse(textBox1.Text);
+                            Data.RN[Data.i1, 1] = double.Parse(textBox2.Text);
+                            Data.RN[Data.i1, 2] = double.Parse(textBox3.Text);
+
+                            Data.RKN[Data.i1, 0] = double.Parse(textBox4.Text);
+                            Data.RKN[Data.i1, 1] = double.Parse(textBox5.Text);
+                            Data.RKN[Data.i1, 2] = double.Parse(textBox6.Text);
+                            break;
+                        }
+                    case 5:
+                        {
+                            Data.RN[Data.i1, 0] = double.Parse(textBox1.Text);
+                            Data.RN[Data.i1, 1] = double.Parse(textBox2.Text);
+                            Data.RN[Data.i1, 2] = double.Parse(textBox3.Text);
+
+                            Data.RKN[Data.i1, 0] = double.Parse(textBox4.Text);
+                            Data.RKN[Data.i1, 1] = double.Parse(textBox5.Text);
+                            Data.RKN[Data.i1, 2] = double.Parse(textBox6.Text);
+                            break;
+                        }
+                    case 6:
+                        {
+                            Data.RN[Data.i1, 0] = double.Parse(textBox1.Text);
+                            Data.RN[Data.i1, 1] = double.Parse(textBox2.Text);
+                            Data.RN[Data.i1, 2] = 0;
+
+                            Data.RKN[Data.i1, 0] = double.Parse(textBox3.Text);
+                            Data.RKN[Data.i1, 1] = 0;
+                            Data.RKN[Data.i1, 2] = 0;
+                            break;
+                        }
+                }
+                this.Close();
                 Data.combocheck = -1;
             }
-            else
-            {
-                this.Hide();
-                Form6 sixthForm = new Form6();
-                sixthForm.ShowDialog();
-                this.Close();
-            }
+            /*    else
+               {
+                   /* this.Hide();
+                   Form6 sixthForm = new Form6();
+                   sixthForm.ShowDialog(); 
+                   this.Close();
+               } */
+        }
+
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+            RB = 0.7;
+        }
+
+        private void radioButton3_CheckedChanged(object sender, EventArgs e)
+        {
+            RB = 1.3;
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            RB = 1;
         }
     }
 }

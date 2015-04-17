@@ -12,7 +12,7 @@ namespace Диплом1
 {
     public partial class Form6 : Form
     {
-        public int k = 1;
+        public int k = 0;
         public Form6()
         {
             InitializeComponent();
@@ -21,40 +21,39 @@ namespace Диплом1
         private void Form6_Load(object sender, EventArgs e)
         {
             kolvo.kolvo_TB4 = 1;
-            kolvo.kolvo_TB4 = 2;
-            Peremen.F2_TB4 = int.Parse(Peremen.TB4);
-            Peremen.F2_TB5 = int.Parse(Peremen.TB5);
+            kolvo.kolvo_TB5 = 0;
             tempVnesh();
         }
 
         public void tempVnesh()
         {
+            k++;
             label3.Text = "Внешняя температура по шкале цельсия";
             label4.Text = k.ToString(); ;
-            label6.Text = "Воздействия (внешняя температура)";
+            label6.Text = "воздействия (внешняя температура)";
         }
 
         public void tempVnutr()
         {
+            k++;
             label3.Text = "Значение тепловых потоков внутренних источников (Вт)";
             label4.Text = k.ToString(); ;
-            label6.Text = "Воздействия (источник внутренних тепловыделений)";
+            label6.Text = "воздействия (источник внутренних тепловыделений)";
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            k++;
-            if (kolvo.kolvo_TB4 <= Peremen.F2_TB4)
+            if (kolvo.kolvo_TB5 < Peremen.F2_TB5)
             {
-                kolvo.kolvo_TB4++;
+                kolvo.kolvo_TB5++;
                 tempVnesh();
             }
             else
             {
-                if (kolvo.kolvo_TB5 <= Peremen.F2_TB5)
+                tempVnutr();
+                if (kolvo.kolvo_TB4 <= Peremen.F2_TB4)
                 {
-                    kolvo.kolvo_TB5++;
-                    tempVnutr();
-                    if (kolvo.kolvo_TB5 > Peremen.F2_TB5)
+                    kolvo.kolvo_TB4++;
+                    if (kolvo.kolvo_TB4 > Peremen.F2_TB4)
                     {
                         this.Close();
                         MessageBox.Show("Ввод закончен");

@@ -29,6 +29,68 @@ namespace Диплом1
         {
 
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i < Peremen.F2_TB2; i++) 
+            {
+                textBox1.Text += " Tul \r\n  ";
+                for (int j = 0; j < 4; j++)
+                {
+                    textBox1.Text += Data.TUL[i, j].ToString() + " ";
+                }
+            }
+            textBox2.Text += "\r\n Tun \r\n ";
+            for (int i = 0; i < Peremen.F2_TB3; i++)
+            {
+                textBox2.Text += " \r\n ";
+                for (int j = 0; j < 3; j++)
+                {
+                    textBox2.Text += Data.TUN[i, j].ToString() + " ";
+                }
+            }
+            textBox3.Text += "\r\n RL \r\n ";
+            for (int i = 0; i < Peremen.F2_TB2; i++)
+            {
+                textBox3.Text += "\r\n ";
+                for (int j = 0; j < 2; j++)
+                {
+                    textBox3.Text += Data.RL[i, j].ToString() + " ";
+                }
+            }
+            textBox4.Text += "\r\n RLMB \r\n";
+            for (int i = 0; i < Peremen.F2_TB2; i++)
+            {
+                textBox4.Text += " \r\n  ";
+                for (int j = 0; j < 2; j++)
+                {
+                    textBox4.Text += Data.RLMB[i, j].ToString() + " ";
+                }
+            }
+            textBox5.Text += "\r\n RN \r\n";
+              for (int i = 0; i < Peremen.F2_TB3; i++)
+              {
+                  textBox5.Text += "\r\n ";
+                  for (int j = 0; j < 3; j++)
+                  {
+                      textBox5.Text += Data.RN[i, j].ToString() + " ";
+                  }
+              }
+              textBox6.Text += "\r\n RKN \r\n";
+              for (int i = 0; i < Peremen.F2_TB3; i++)
+              {
+                  textBox6.Text += "\r\n ";
+                  for (int j = 0; j < 3; j++)
+                  {
+                      textBox6.Text += Data.RKN[i, j].ToString() + " ";
+                  }
+              } 
+        }
     }
    public class Peremen
    {
